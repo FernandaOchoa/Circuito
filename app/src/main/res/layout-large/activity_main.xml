@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.example.roland.myapplication.MainActivity"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        style="@style/TextViews"
+        android:id="@+id/main_text_view"
+        android:text="@string/evaluate"
+        />
+
+    <Button
+        android:id="@+id/res_val"
+        style="@style/Button"
+        android:text="@string/resistance"
+        android:layout_marginTop="150dp"
+        android:layout_below="@+id/main_text_view"
+        android:layout_centerHorizontal="true"
+        android:onClick="callAddAResistance"
+        android:focusable="false"
+        android:layout_alignParentBottom="false" />
+    <Button
+        android:id="@+id/complex_circuit"
+        android:text="@string/complex"
+        style="@style/Button"
+        android:layout_marginTop="120dp"
+        android:layout_below="@+id/res_val"
+        android:layout_centerHorizontal="true"
+        android:onClick="callChooseComplexType"
+        android:layout_alignParentBottom="false" />
+
+</RelativeLayout>

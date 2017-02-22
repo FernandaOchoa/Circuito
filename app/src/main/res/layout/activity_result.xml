@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.example.roland.myapplication.Result"
+    >
+
+    <TextView
+        android:id="@+id/result_text_view"
+        style="@style/TextView"
+        android:layout_marginTop="67dp"
+        android:text="@string/equivalent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <TextView
+        android:id="@+id/final_result"
+        style="@style/BarOhms"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/unity"
+        />
+
+    <TextView
+        android:id="@+id/unity"
+        style="@style/BarOhms"
+        android:text="@string/resUnity"
+        android:layout_alignTop="@+id/final_result"
+        android:layout_alignEnd="@+id/result_text_view"
+        />
+
+    <Button
+        android:id="@+id/home"
+        android:text="@string/homeButtonText"
+        style="@style/Button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="callHome"
+        />
+
+</RelativeLayout>

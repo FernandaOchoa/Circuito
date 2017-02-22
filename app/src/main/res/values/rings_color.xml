@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="colors">
+        <item name="Black">#000000</item>
+        <item name="Brown">#582900</item>
+        <item name="Red">#FF0000</item>
+        <item name="Orange">#ED7F10</item>
+        <item name="Yellow">#FFFF00</item>
+        <item name="Green">#096A09</item>
+        <item name="Blue">#0000FF</item>
+        <item name="Violet">#660099</item>
+        <item name="Gray">#606060</item>
+        <item name="White">#FFFFFF</item>
+        <item name="Gold">#FFD700</item>
+        <item name="Silver">#CECECE</item>
+    </string-array>
+</resources>

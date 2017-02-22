@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.example.roland.myapplication.Resume">
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="wrap_content"
+        android:layout_height="380dp" />
+
+    <Button
+        android:id="@+id/modification_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginStart="0dp"
+        android:onClick="modifyBtn"
+        android:text="@string/modify"
+        style="@style/Button"/>
+
+    <Button
+        android:id="@+id/validation_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="0dp"
+        android:onClick="callResultPage"
+        android:text="@string/validate"
+        style="@style/Button"/>
+
+    <Button
+        android:id="@+id/home"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="callHome"
+        android:text="@string/homeButtonText"
+        style="@style/Button"/>
+
+</RelativeLayout>

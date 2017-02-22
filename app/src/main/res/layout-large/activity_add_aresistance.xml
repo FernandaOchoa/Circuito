@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.example.roland.myapplication.AddAResistance">
+
+    <TextView
+        android:id="@+id/nomber_rings_text"
+        style="@style/TextViewLarge"
+        android:layout_below="@id/main_text_view"
+        android:layout_marginTop="20dp"
+        android:text="@string/ringsNbr" />
+
+    <TextView
+        android:id="@+id/ringColor"
+        style="@style/TextViewLarge"
+        android:layout_below="@id/nomber_rings_text"
+        android:layout_marginTop="10dp"
+        android:text="@string/ringColor" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/ringColor"
+        android:layout_marginTop="10dp" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/ringColor"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <Spinner
+        android:id="@+id/spinner5"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/spinner2"
+        android:layout_marginTop="10dp" />
+
+    <Spinner
+        android:id="@+id/spinner6"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/spinner2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <Spinner
+        android:id="@+id/spinner7"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/spinner2"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/total"
+        style="@style/BarOhmsLarge"
+        android:layout_below="@+id/resultat_text"
+        android:layout_marginTop="31dp"
+        android:layout_toStartOf="@+id/spinner6"
+        android:paddingStart="16dp" />
+
+    <TextView
+        android:id="@+id/unity"
+        style="@style/BarOhmsLarge"
+        android:layout_alignEnd="@+id/spinner1"
+        android:layout_alignTop="@+id/total"
+        android:text="@string/resUnity"
+        android:paddingRight="16dp"/>
+
+    <TextView
+        android:id="@+id/signe"
+        style="@style/BarOhmsLarge"
+        android:layout_alignTop="@+id/total"
+        android:layout_toStartOf="@+id/tolerance"
+        android:text="@string/plusMinusText" />
+
+    <TextView
+        android:id="@+id/tolerance"
+        style="@style/BarOhmsLarge"
+        android:layout_alignTop="@+id/unity"
+        android:layout_toStartOf="@+id/unity" />
+
+    <Spinner
+        android:id="@+id/spinner4"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/spinner7"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/resultat_text"
+        style="@style/TextViewLarge"
+        android:text="@string/givingResultText"
+        android:layout_below="@id/spinner5"/>
+
+    <TextView
+        android:id="@+id/main_text_view"
+        style="@style/TextViewsLarge"
+        android:text="@string/titleAddRes"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/main_text_view"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/home"
+        style="@style/Button"
+        android:onClick="callHome"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="13dp" />
+
+
+</RelativeLayout>

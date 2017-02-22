@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.monsh.resistance.MainActivity"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/main_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextView"
+        android:text="@string/evaluate"
+        />
+
+    <Button
+        android:id="@+id/res_val"
+        style="@style/Button"
+        android:text="@string/resistance"
+        android:onClick="callAddAResistance"
+        android:layout_below="@+id/main_text_view"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:focusable="false"
+        android:layout_alignParentBottom="false" />
+    <Button
+        android:id="@+id/complex_circuit"
+        style="@style/Button"
+        android:text="@string/complex"
+        android:onClick="callChooseComplexType"
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/res_val"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="false" />
+
+
+</RelativeLayout>

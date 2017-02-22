@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ChooseNbr">
+
+    <!--<TextView
+         android:id="@+id/text_view"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Serial type :" />-->
+
+    <TextView
+        android:id="@+id/number_resistances_text"
+        style="@style/TextViewLargeX"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="Enter the number of resistances :" />
+
+
+    <EditText
+        android:id="@+id/enter_number"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/number_resistances_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:inputType="number"
+        android:textColorHint="@color/colorAc"
+        android:hint="@string/num"
+        android:textAlignment="center"
+        android:textSize="25sp" />
+
+
+    <Button
+        android:id="@+id/validation_button"
+        android:layout_below="@+id/number_resistances_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="280dp"
+        android:onClick="validationNbRes"
+        android:text="@string/validate"
+        style="@style/Button"
+        android:focusable="false"
+        android:layout_alignParentBottom="false" />
+
+    <Button
+        android:id="@+id/home"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="callHome"
+        android:text="@string/homeButtonText"
+        style="@style/Button" />
+
+</RelativeLayout>

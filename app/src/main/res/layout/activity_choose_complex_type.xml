@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ChooseComplexType">
+
+    <TextView
+        android:id="@+id/text_view_choose_type"
+        style="@style/TextViewsLarge"
+        android:textAlignment="center"
+        android:text="@string/circuitType" />
+
+    <Button
+        android:id="@+id/home"
+        style="@style/Button"
+        android:text="@string/homeButtonText"
+        android:layout_centerHorizontal="true"
+        android:onClick="callHome"
+        />
+
+    <Button
+        android:id="@+id/serial_type_button"
+        style="@style/Button"
+        android:layout_marginTop="40dp"
+        android:padding="5dp"
+        android:layout_below="@id/text_view_choose_type"
+        android:text="@string/serial"
+        android:onClick="callChooseNbr"
+        android:layout_alignParentBottom="false" />
+
+    <Button
+        android:id="@+id/parallel_type_button"
+        android:layout_below="@id/serial_type_button"
+        android:layout_marginTop="20dp"
+        android:text="@string/parallel"
+        android:onClick="callChooseNbr"
+        android:clickable="true"
+        style="@style/Button"
+        android:layout_alignParentBottom="false" />
+
+</RelativeLayout>

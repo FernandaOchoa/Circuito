@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/White"
+    tools:context="com.example.roland.myapplication.ListOfResistances">
+
+    <TextView
+        android:id="@+id/main_text_view"
+        android:layout_centerHorizontal="true"
+        style="@style/TextView"
+        android:text="@string/titleAddRes" />
+
+    <TextView
+        android:id="@+id/nomber_rings_text"
+        android:layout_below="@id/main_text_view"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        style="@style/TextViewLarge"
+        android:text="@string/ringsNbr" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="70dp"
+        android:layout_alignParentEnd="true"
+        />
+
+    <TextView
+        android:id="@+id/ringColor"
+        android:layout_below="@id/nomber_rings_text"
+        android:layout_marginTop="30dp"
+        style="@style/TextViewLarge"
+        android:text="@string/ringColor" />
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/ringColor"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"/>
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/ringColor"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+    <Spinner
+        android:id="@+id/spinner4"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/ringColor"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true"
+        />
+    <Spinner
+        android:id="@+id/spinner5"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/spinner2"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        />
+    <Spinner
+        android:id="@+id/spinner6"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/spinner2"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+    <Spinner
+        android:id="@+id/spinner7"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/spinner2"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:id="@+id/resultat_text"
+        android:layout_below="@id/spinner5"
+        android:layout_marginTop="15dp"
+        style="@style/TextViewLarge"
+        android:text="@string/givingResultText"/>
+
+    <TextView
+        android:id="@+id/total"
+        style="@style/BarOhms"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/resultat_text"
+        android:layout_alignParentStart="true"
+        />
+
+    <TextView
+        android:id="@+id/unity"
+        style="@style/BarOhms"
+        android:text="@string/resUnity"
+        android:layout_alignTop="@+id/total"
+        android:layout_alignEnd="@+id/spinner1"
+        />
+
+    <Button
+        android:id="@+id/next_value"
+        style="@style/Button"
+        android:text="@string/nextButtonText"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="nextResValue"
+        />
+
+    <Button
+        android:id="@+id/home"
+        android:text="@string/homeButtonText"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:onClick="callHome"
+        style="@style/Button"
+        />
+
+    <TextView
+        style="@style/BarOhms"
+        android:id="@+id/tolerance"
+        android:textAlignment="center"
+        android:layout_alignBaseline="@+id/unity"
+        android:layout_alignBottom="@+id/unity"
+        android:layout_toStartOf="@+id/unity" />
+
+    <TextView
+        android:id="@+id/signe"
+        android:text="@string/plusMinusText"
+       style="@style/BarOhms"
+        android:layout_above="@+id/temp_coeff"
+        android:layout_toStartOf="@+id/tolerance" />
+
+    <TextView
+        android:id="@+id/temp_coeff"
+        android:text="Temp. Coeff. : "
+        style="@style/BarOhms"
+        android:textSize="16sp"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/total"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp" />
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Aplicacion de Circuitos</string>
+    <string name="warning">El valor de la resistencia no puede ser igual a 0.0</string>
+    <string name="toleranceByDefault"> 20 % </string>
+    <string name="toleranceValue"> % </string>
+    <string name="titleAddRes">Introduce las caracteristicas de la/s resistencias:</string>
+    <string name="ringsNbr">Numero de anillos :</string>
+    <string name="ringColor">Selecciona el color del anillo :</string>
+    <string name="givingResultText">El valor de la resistencia es : </string>
+    <string name="resUnity">Ohms</string>
+    <string name="nextButtonText">Siguiente</string>
+    <string name="homeButtonText">Inicio</string>
+    <string name="plusMinusText">+/-</string>
+    <string name="circuitType">Selecciona un tipo de ciruito:</string>
+    <string name="serial">CIRCUITO SERIE</string>
+    <string name="parallel">CIRCUITO PARALELO</string>
+    <string name="numberRest">Introduce el numero de resistencias :</string>
+    <string name="validate">VALIDAR</string>
+    <string name="num">Numero</string>
+    <string name="evaluate">Evaluar el valor de :</string>
+    <string name="resistance">RESISTENCIA</string>
+    <string name="complex">CIRCUITO MIXTO</string>
+    <string name="modify">MODIFICAR</string>
+    <string name="equivalent">La resitencia equivalente de tu circuito es : </string>
+</resources>

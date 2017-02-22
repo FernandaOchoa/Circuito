@@ -1,0 +1,156 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrim</item>
+        <item name="colorPrimaryDark">@color/colorPrimDark</item>
+        <item name="colorAccent">@color/colorAc</item>
+    </style>
+
+    <style name="Button" parent="AppTheme">
+        <!-- Buttons Style -->
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:background">@color/colorAc</item>
+        <item name="android:text">@string/homeButtonText</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/White</item>
+    </style>
+
+
+    <style name="TextViews" parent="AppTheme">
+        <!-- TextViews Style -->
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/Gray</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextView" parent="AppTheme">
+        <!-- TextViews Style -->
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/Gray</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="BarOhms" parent="AppTheme">
+        <!-- Bar Resistor Style -->
+        <item name="android:background">@color/colorA2</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:textAlignment">center</item>
+
+    </style>
+
+    <style name="BarOhmsLand" parent="AppTheme">
+        <!-- Bar Resistor Style SCREEN NORMAL -->
+        <item name="android:background">@color/colorA2</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="TextViewLand" parent="AppTheme">
+        <!-- TextViews Style -->
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/Gray</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextViewsLand" parent="AppTheme">
+        <!-- TextViews Style -->
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/Gray</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ButtonLand" parent="AppTheme">
+        <!-- Buttons Style -->
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:background">@color/colorAc</item>
+        <item name="android:text">@string/homeButtonText</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/White</item>
+    </style>
+
+    <style name="ButtonLarge" parent="AppTheme">
+        <!-- Buttons Style -->
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:background">@color/colorAc</item>
+        <item name="android:text">@string/homeButtonText</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/White</item>
+    </style>
+
+
+    <style name="TextViewsLarge" parent="AppTheme">
+        <!-- TextViews Style -->
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/Gray</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextViewLarge" parent="AppTheme">
+        <!-- TextViews Style -->
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/Gray</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="TextViewLargeX" parent="AppTheme">
+        <!-- TextViews Style -->
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/Gray</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="BarOhmsLarge" parent="AppTheme">
+        <!-- Bar Resistor Style -->
+        <item name="android:background">@color/colorA2</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:textAlignment">center</item>
+
+    </style>
+</resources>
