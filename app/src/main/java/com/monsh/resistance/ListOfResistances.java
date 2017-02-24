@@ -364,8 +364,12 @@ public class ListOfResistances extends AppCompatActivity {
             }
         });
     }
-
-    @Override
+//// FIXME: 23/02/2017 Remove this lines in code to fix this exception
+    /*
+    * EXCEPTION PROVIDED BY THIS LINES:
+    *  java.lang.IllegalArgumentException: AppIndex: The android-app URI host must match the package name and follow the format android-app://<package_name>/<scheme>/<host_path>. Provided URI: android-app://com.example.roland.myapplication/http/host/pat
+    * */
+    /*@Override
     public void onStart() {
         super.onStart();
 
@@ -403,5 +407,5 @@ public class ListOfResistances extends AppCompatActivity {
         );
         AppIndex.AppIndexApi.end(client, viewAction);
         client.disconnect();
-    }
+    }*/
 }
