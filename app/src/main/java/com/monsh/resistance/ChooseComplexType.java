@@ -23,13 +23,13 @@ public class ChooseComplexType extends AppCompatActivity {
         switch (view.getId()) {
             case R.id.serial_type_button:
                 setCircuitType(1);
-                Intent intent = new Intent(this, ChooseNbr.class);
-                this.startActivity(intent);
+                Intent intent = new Intent(getApplicationContext(), ChooseNbr.class);
+                startActivity(intent);
                 break;
             case R.id.parallel_type_button:
                 setCircuitType(2);
-                Intent intent2 = new Intent(this, ChooseNbr.class);
-                this.startActivity(intent2);
+                Intent intent2 = new Intent(getApplicationContext(), ChooseNbr.class);
+                startActivity(intent2);
                 break;
         }
     }
@@ -39,8 +39,8 @@ public class ChooseComplexType extends AppCompatActivity {
      * Calling Home
      */
     public void callHome(View view) {
-        Intent intent = new Intent(this, MainActivity.class);
-        this.startActivity(intent);
+        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        startActivity(intent);
     }
 
     public static int getCircuitType() {
