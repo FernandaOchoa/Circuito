@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:padding="16dp"
     android:background="@color/White"
-    tools:context="com.example.roland.myapplication.ListOfResistances">
+    tools:context=".ListOfResistances">
 
     <TextView
         android:id="@+id/main_text_view"

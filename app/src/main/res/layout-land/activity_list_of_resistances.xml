@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:padding="16dp"
     android:orientation="horizontal"
-    tools:context="com.example.roland.myapplication.ListOfResistances">
+    tools:context=".ListOfResistances">
 
     <TextView
         android:id="@+id/main_text_view"

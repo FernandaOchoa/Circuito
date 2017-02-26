@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/White"
     android:padding="16dp"
-    tools:context="com.example.roland.myapplication.AddAResistance">
+    tools:context="com.monsh.resistance.AddAResistance">
 
     <Spinner
         android:id="@+id/spinner2"
@@ -131,6 +131,5 @@
         android:layout_alignBaseline="@+id/unity"
         android:layout_alignBottom="@+id/unity"
         android:layout_toStartOf="@+id/unity" />
-
 
 </RelativeLayout>

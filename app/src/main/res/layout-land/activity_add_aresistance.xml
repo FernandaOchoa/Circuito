@@ -6,7 +6,7 @@
     android:background="@color/White"
     android:orientation="horizontal"
     android:padding="16dp"
-    tools:context="com.example.roland.myapplication.AddAResistance">
+    tools:context="com.monsh.resistance.AddAResistance">
 
 
     <TextView
